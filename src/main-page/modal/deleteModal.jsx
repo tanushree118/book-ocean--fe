@@ -8,7 +8,7 @@ let style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: "32%",
   bgcolor: "background.paper",
   border: "2px solid #000",
   p: 4,
@@ -26,12 +26,12 @@ const DeleteModal = ({
   if (matches) {
     style = {
       ...style,
-      width: 300
+      width: "74%"
     }
   } else {
     style = {
       ...style,
-      width: 400
+      width: "32%"
     }
   }
   return (

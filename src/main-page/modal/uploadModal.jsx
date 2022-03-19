@@ -7,7 +7,7 @@ let muiStyle = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: "32%",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -37,12 +37,12 @@ const UploadModal = ({
   if (matches) {
     muiStyle = {
       ...muiStyle,
-      width: 300,
+      width: "74%",
     };
   } else {
     muiStyle = {
       ...muiStyle,
-      width: 400,
+      width: "32%",
     };
   }
   return (

@@ -46,7 +46,7 @@ const RegistrationPage = ({
         <TextField
           id="firstname"
           label={FIRSTNAME}
-          className={styles.textField}
+          className={styles.firstTextField}
           onChange={(event) =>
             handleRegistrationFormDataChange(event, "firstname")
           }
@@ -64,7 +64,7 @@ const RegistrationPage = ({
           error={registrationFormDataErrors.nameError ? true : false}
         />
       </Box>
-      <Box className={styles.fieldWidth}>
+      <Box>
         <TextField
           id="emailAddress"
           label={EMAIL_ADDRESS}
@@ -77,7 +77,7 @@ const RegistrationPage = ({
           helperText={registrationFormDataErrors.emailAddressError}
         />
       </Box>
-      <Box className={styles.fieldWidth}>
+      <Box>
         <TextField
           id="username"
           label={USERNAME}
@@ -95,7 +95,7 @@ const RegistrationPage = ({
           id="password"
           label={PASSWORD}
           type={showPassword ? "text" : "password"}
-          className={styles.textField}
+          className={styles.firstTextField}
           onChange={(event) =>
             handleRegistrationFormDataChange(event, "password")
           }
