@@ -1,0 +1,57 @@
+.registrationBox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid slategrey;
+  border-radius: 5px;
+  width: 50%;
+  padding: 20px;
+
+  .textField {
+    margin-right: 3%;
+  }
+
+  .nameBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    width: 50%;
+  }
+
+  .passwordBox {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .emailAddressField {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .registrationButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .fieldWidth {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .registrationBox {
+    width: 85%;
+    .emailAddressField {
+      width: 100%;
+      margin-bottom: 3%;
+    }
+    .nameBox,
+    .fieldWidth,
+    .passwordBox,
+    .registrationButtons {
+      width: 100%;
+    }
+  }
+}

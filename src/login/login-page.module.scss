@@ -1,0 +1,37 @@
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid slategrey;
+  border-radius: 5px;
+  width: 30%;
+  padding: 40px;
+
+  .loginFieldBox {
+    display: flex;
+    flex-direction: column;
+    .invalidCredentialsMsg {
+      color: red;
+      font-size: smaller;
+    }
+  }
+
+  .textField {
+    margin-bottom: 30px;
+  }
+
+  .loginButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    .registerButton {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loginBox {
+    width: 62%;
+  }
+}

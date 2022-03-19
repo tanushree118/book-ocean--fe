@@ -1,0 +1,157 @@
+.mainPage {
+  height: 100vh;
+  width: 100%;
+  .navBarContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+    .avatar {
+      cursor: pointer;
+    }
+  }
+  .divider {
+    width: 100%;
+  }
+  .contentContainer {
+    height: 82%;
+    padding: 3%;
+    .scrollContainer {
+      overflow: auto;
+      white-space: nowrap;
+      padding-bottom: 2%;
+    }
+    .genreContainer {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-direction: row;
+      .bookContainer {
+        display: flex;
+        border: 1px solid slategrey;
+        border-radius: 5px;
+        width: 100%;
+        height: 30%;
+        padding: 2%;
+        margin-right: 2%;
+        .bookTitle {
+          font-weight: bold;
+        }
+        .bookAuthor {
+          color: slategrey;
+        }
+        .imageContainer {
+          border: 2px solid slategrey;
+          border-radius: 5px;
+          padding: 3%;
+          margin-right: 4%;
+        }
+      }
+    }
+    .fullContainer, .noResultFound {
+      width: 100%;
+      height: 100%;
+    }
+    .noResultFound {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+
+.viewMoreContainer {
+  padding: 2%;
+  border: 1px solid slategrey;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  .bookTitle {
+    font-weight: bold;
+  } 
+  .bookAuthor {
+    color: slategrey;
+  }
+}
+
+.spaceBetween, .headerContainer {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.headerContainer {
+  .searchField {
+    width: 40%;
+  }
+  .crossIcon {
+    display: none;
+  }
+  .visibleCrossIcon {
+    cursor: pointer;
+  }
+}
+
+.centerAligned {
+  display: flex;
+  align-items: center;
+}
+
+.uploadAndSuggestionContainer {
+  display: flex;
+  width: 31%;
+  justify-content: flex-end;
+  
+  .uploadButton {
+    margin-right: 2%;
+    text-transform: capitalize;
+    span {
+      margin-right: 5px;
+    }
+  }
+  .suggestionButton {
+    text-transform: capitalize;
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+
+
+.deleteButtonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  .endSpace {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headerContainer {
+    display: flex;
+    .searchField {
+      width: 100%;
+    }
+    .uploadAndSuggestionContainer {
+      width: 100%;
+      height: 56px;
+      .uploadButton {
+        margin-right: 2%;
+        span {
+          display: none;
+        }
+      }
+      .suggestionButton {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
