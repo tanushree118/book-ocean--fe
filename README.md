@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a book sharing application, which provides users to upload and download books to and from the application.
 
 ## Available Scripts
 
